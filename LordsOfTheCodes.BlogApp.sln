@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogApp.Entities", "BlogApp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogApp.DataAccess", "BlogApp.DataAccess\BlogApp.DataAccess.csproj", "{13F1CDA3-D001-496F-B17E-1878EC00878E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogApp.Business", "BlogApp.Business\BlogApp.Business.csproj", "{702CD629-C884-44B3-95DA-88766AFB3A0E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{13F1CDA3-D001-496F-B17E-1878EC00878E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13F1CDA3-D001-496F-B17E-1878EC00878E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13F1CDA3-D001-496F-B17E-1878EC00878E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{702CD629-C884-44B3-95DA-88766AFB3A0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{702CD629-C884-44B3-95DA-88766AFB3A0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{702CD629-C884-44B3-95DA-88766AFB3A0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{702CD629-C884-44B3-95DA-88766AFB3A0E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

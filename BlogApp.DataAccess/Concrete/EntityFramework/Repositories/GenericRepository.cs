@@ -42,6 +42,10 @@ namespace BlogApp.DataAccess.Concrete.EntityFramework.Repositories
         {
             using (context)
             {
+                if (filter==null)
+                {
+                    return context.Set<TEntity>().ToList();
+                }
                 return context.Set<TEntity>().Where(filter).ToList();
             }
         }
