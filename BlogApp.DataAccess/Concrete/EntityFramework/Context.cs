@@ -1,4 +1,5 @@
-﻿using BlogApp.Entities.Concrete;
+﻿using BlogApp.DataAccess.Concrete.EntityFramework.Mappings;
+using BlogApp.Entities.Concrete;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -10,8 +11,10 @@ namespace BlogApp.DataAccess.Concrete.EntityFramework
     {
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            
-            base.OnModelCreating(modelBuilder);
+            modelBuilder.ApplyConfiguration(new AppUserMap());
+            modelBuilder.ApplyConfiguration(new BlogMap());
+            modelBuilder.ApplyConfiguration(new ContactMap());
+            modelBuilder.ApplyConfiguration(new AboutMap());           
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
