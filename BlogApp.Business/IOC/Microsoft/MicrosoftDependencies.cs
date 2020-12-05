@@ -1,7 +1,10 @@
 ﻿using BlogApp.Business.Abstract;
 using BlogApp.Business.Concrete;
+using BlogApp.Business.ValidationRules.AppUserValidations;
 using BlogApp.DataAccess.Abstract;
 using BlogApp.DataAccess.Concrete.EntityFramework.Repositories;
+using BlogApp.Dto.Dtos.AppUserDtos;
+using FluentValidation;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -23,6 +26,9 @@ namespace BlogApp.Business.IOC.Microsoft
             services.AddScoped<IContactService, ContactManager>();
             services.AddScoped<IBlogRepository, BlogRepository>();
 
+
+            //Validations
+            services.AddTransient<IValidator<AppUserLoginDto>, AppUserLoginDtoValidator>();
 
 
         }

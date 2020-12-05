@@ -8,7 +8,7 @@ using System.Text;
 
 namespace BlogApp.DataAccess.Concrete.EntityFramework.Repositories
 {
-    public class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEntity:class,IEntity,new
+    public class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEntity:class,IEntity,new()
     {
         Context context = new Context();
 

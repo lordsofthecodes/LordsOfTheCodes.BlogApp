@@ -5,11 +5,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="ValidationRules\" />
+    <Folder Include="ValidationRules\ContactValidations\" />
+    <Folder Include="ValidationRules\BlogValidations\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="9.3.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\BlogApp.DataAccess\BlogApp.DataAccess.csproj" />
+    <ProjectReference Include="..\BlogApp.Dto\BlogApp.Dto.csproj" />
     <ProjectReference Include="..\BlogApp.Entities\BlogApp.Entities.csproj" />
   </ItemGroup>
 
