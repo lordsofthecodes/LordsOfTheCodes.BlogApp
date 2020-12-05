@@ -18,7 +18,7 @@ namespace BlogApp.DataAccess.Concrete.EntityFramework
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("server=localhost\\SQLEXPRESS;Database=TeamBlog;Integrated Security=true");
+            optionsBuilder.UseSqlServer("server=DESKTOP-3VB3SSC\\SQLEXPRESS;Database=TeamBlog;Integrated Security=true");
         }
         public DbSet<Blog> Blogs { get; set; }
         public DbSet<AppUser> AppUsers { get; set; }
